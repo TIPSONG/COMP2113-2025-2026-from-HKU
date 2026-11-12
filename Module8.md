@@ -95,7 +95,7 @@
   };
 
   int main() {
-      Student s = {"Alice", 3035123456};
+      Student s = {"Alice", 1001};
       Student *sp = &s;
 
       // 三种等价访问方式
@@ -103,8 +103,8 @@
       cout << (*sp).name << endl;    // 解引用后访问
       cout << sp->name << endl;      // 指针专用访问（推荐）
 
-      sp->id = 3035123457;  // 修改成员值
-      cout << sp->id << endl;  // 输出3035123457
+      sp->id = 1002;  // 修改成员值
+      cout << sp->id << endl;  // 输出1002
       return 0;
   }
   ```

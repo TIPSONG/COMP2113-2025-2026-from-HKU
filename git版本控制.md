@@ -83,7 +83,7 @@ $ brew install git
   $ cd project
   # 2. 初始化仓库
   $ git init
-  # 输出：Initialized empty Git repository in /home/research/ra/1801/cklai/project/.git/
+  # 输出：Initialized empty Git repository in /home/student/project/.git/
   # 3. 创建文件（示例）
   $ echo "Welcome to my Git tutorial." > work.txt
   ```
@@ -205,7 +205,7 @@ $ brew install git
   $ git log
   # 输出：
   commit 8327731fa6a9108fb6b54d0b38b9b59c7fbf316c (HEAD -> master)
-  Author: Chan Tai Man <tmchan@academy11.cs.hku.hk>
+  Author: Example Student <student@example.com>
   Date:   Mon Jan 14 10:38:43 2019 +0800
           Added an introduction and workflow line to work.txt
   ```

@@ -76,7 +76,7 @@
 - 代码示例：
   ```bash
   $ pwd
-  # 输出示例：/home/research/ra/1801/tmchan
+  # 输出示例：/home/student
   ```
 
 #### 3.2.5 `man`：查看命令手册
@@ -292,8 +292,8 @@
   ```bash
   $ ls -l
   total 10
-  -rw------- 1 cklai ra 50 Jul 30 17:07 file1.txt
-  drwx------ 2 cklai ra 2 Jul 30 17:00 lab/
+  -rw------- 1 student ra 50 Jul 30 17:07 file1.txt
+  drwx------ 2 student ra 2 Jul 30 17:00 lab/
   ```
 - 字段解读：
   | 字段 | 英文解释 | 中文解释 |
@@ -301,7 +301,7 @@
   | `total 10` | Total space of files in the directory (KB) | 目录中文件占用总空间（KB） |
   | `-rw-------` | Permission indicator | 权限标识（file1.txt为普通文件，User: rw-，Group: ---, Other: ---） |
   | `1` | Number of hard links | 硬链接数量 |
-  | `cklai` | Owner of the file/directory | 文件/目录所有者 |
+  | `student` | Owner of the file/directory | 文件/目录所有者 |
   | `ra` | Group of the owner | 所有者所属组 |
   | `50` | File size (bytes) | 文件大小（字节） |
   | `Jul 30 17:07` | Last modification time | 最后修改时间 |

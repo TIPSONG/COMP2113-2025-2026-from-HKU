@@ -46,21 +46,23 @@
 SSH 提供命令行界面，用于与远程服务器交互，需连接的服务器为主机 `academy11.cs.hku.hk` 或 `academy21.cs.hku.hk`。
 
 ##### （1）网络环境差异（Key Difference by Network Environment）
+
+将命令中的 `CS_USERNAME` 替换为你自己的 CS 账号。
 | 网络类型 | 英文原文 | 中文译文 | 核心命令（Code Snippet） |
 |----------|----------|----------|--------------------------|
 | 外部网络（如家庭网络） | If you are connecting the server from outside the CS network (e.g., from home), you should first make an HKUVPN connection. | 若从 CS 网络外（如家庭）连接服务器，需先建立 HKUVPN 连接。 | ```bash
 # 直接连接目标服务器（需先连 HKUVPN）
-ssh cs_account@academy11.cs.hku.hk
+ssh CS_USERNAME@academy11.cs.hku.hk
 # 或
-ssh cs_account@academy21.cs.hku.hk
+ssh CS_USERNAME@academy21.cs.hku.hk
 
 | 校园网络（如 HKU WiFi） | If you are connecting the server from campus network (e.g., via HKU WiFi), you should first connect to gatekeeper.cs.hku.hk before connecting to academy11.cs.hku.hk or academy21.cs.hku.hk. (2 levels of login are required.) | 若从校园网络（如 HKU WiFi）连接服务器，需先连接 `gatekeeper.cs.hku.hk`，再连接 `academy11.cs.hku.hk` 或 `academy21.cs.hku.hk`（需两级登录）。 | ```bash
 # 第一步：连接 gatekeeper 中转服务器
-ssh cs_account@gatekeeper.cs.hku.hk
+ssh CS_USERNAME@gatekeeper.cs.hku.hk
 # 第二步：从 gatekeeper 连接目标服务器
-ssh cs_account@academy11.cs.hku.hk
+ssh CS_USERNAME@academy11.cs.hku.hk
 # 或
-ssh cs_account@academy21.cs.hku.hk
+ssh CS_USERNAME@academy21.cs.hku.hk
 
 
 ##### （2）SSH 客户端要求（SSH Client Requirements）
@@ -116,7 +118,7 @@ Port: （空）
 1. **HKUVPN 必要性**：所有 CS 服务器访问（账户申请、SSH/SFTP）均需先连 HKUVPN。
 2. **CS 账户信息**：需记录用户名、密码（提交文档需包含用户名）。
 3. **SSH 命令与网络差异**：
-   - 外部网络：`ssh cs_account@academy11.cs.hku.hk`（需 HKUVPN）
+   - 外部网络：`ssh CS_USERNAME@academy11.cs.hku.hk`（需 HKUVPN）
    - 校园网络：先连 gatekeeper，再连 academy 服务器
    - 密码输入不显示、`date` 命令与截图
 4. **SFTP 配置**：

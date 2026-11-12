@@ -59,10 +59,10 @@
 
   int main() {
       // 1. 列表初始化（成员顺序必须与定义一致）
-      Student s1 = {3035123456, "Sze Ka Ka", 'F', 3.8};
+      Student s1 = {1001, "Alice", 'F', 3.8};
 
       // 2. 部分初始化（剩余成员为0/空）
-      Student s2 = {3035123457, "John"};  // sex='\0'，gpa=0.0
+      Student s2 = {1002, "John"};  // sex='\0'，gpa=0.0
 
       // 3. 同类型结构体赋值
       Student s3 = s1;  // s3的id、name等与s1完全相同
@@ -124,9 +124,9 @@
       Student students[MAX_STUDENTS];  // 结构体数组
 
       // 初始化数组元素
-      students[0] = {"Alice", 3035123456, 3.9};
+      students[0] = {"Alice", 1001, 3.9};
       students[1].name = "Bob";
-      students[1].id = 3035123457;
+      students[1].id = 1002;
       students[1].gpa = 3.5;
 
       // 遍历数组
